@@ -42,7 +42,7 @@ inputs:
     required: false
 runs:
   using: docker
-  image: ghcr.io/wrboyce/ansible-lint-action/action
+  image: docker.pkg.github.com/wrboyce/ansible-lint-action/action:latest
   args:
   - ${{ inputs.args }}
   env:
